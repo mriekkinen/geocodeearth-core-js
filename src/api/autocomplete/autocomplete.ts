@@ -6,13 +6,15 @@ import { createURL } from '../../utils/url'
 import { APIError } from '../../error'
 
 const createAutocomplete = (
-  apiKey: string,
+  // apiKey: string,
   params?: Params,
   options?: Options
 ): (text: string) => Promise<AutocompleteResult> => {
-  if (!validateApiKey(apiKey)) {
-    throw new Error('Invalid API key specified.')
-  }
+  const apiKey = '';
+
+  // if (!validateApiKey(apiKey)) {
+  //   throw new Error('Invalid API key specified.')
+  // }
 
   // keep track of how many requests we’ve sent
   // for discarding out of order responses
