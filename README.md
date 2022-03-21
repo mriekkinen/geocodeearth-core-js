@@ -1,3 +1,9 @@
+# About this fork
+
+This repository is a fork of [geocodeearth/core-js](https://github.com/geocodeearth/core-js).
+
+It is almost identical to the original, but adds a few minor changes which allow it to be used with other (free) services. The original service is great, but maybe a bit pricy for a small open source project.
+
 # Geocode Earth Core JS
 
 This repository contains the Geocode Earth Core API client for JavaScript. As it is still under development not all APIs are implemented yet and the API itself may change in the future.
