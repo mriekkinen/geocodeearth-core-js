@@ -6,12 +6,10 @@ import { createURL } from '../../utils/url'
 import { APIError } from '../../error'
 
 const createAutocomplete = (
-  // apiKey: string,
+  apiKey?: string,
   params?: Params,
   options?: Options
 ): (text: string) => Promise<AutocompleteResult> => {
-  const apiKey = '';
-
   // if (!validateApiKey(apiKey)) {
   //   throw new Error('Invalid API key specified.')
   // }
@@ -22,7 +20,7 @@ const createAutocomplete = (
   return async (text: string): Promise<AutocompleteResult> => {
     const current = requests = requests + 1
     return await new Promise((resolve, reject) => {
-      const url = createURL('autocomplete', createQuery(apiKey, text, params), options).toString()
+      const url = createURL('autocomplete', createQuery(apiKey ?? '', text, params), options).toString()
       const result: AutocompleteResult = {}
 
       fetch(url)

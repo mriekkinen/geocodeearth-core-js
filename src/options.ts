@@ -1,8 +1,8 @@
 export interface Options {
-  host: string
+  url: string
   client?: string
 }
 
 export const defaultOptions: Options = {
-  host: 'api.geocode.earth'
+  url: 'https://api.geocode.earth/v1'
 }
