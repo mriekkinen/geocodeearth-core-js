@@ -2,7 +2,7 @@
 
 This repository is a fork of [geocodeearth/core-js](https://github.com/geocodeearth/core-js).
 
-It is almost identical to the original, but adds a few minor changes which allow it to be used with other (free) services. The original service is great, but maybe a bit pricy for a small open source project.
+It is almost identical to the original, but adds a few minor changes which allow it to be used with other similar services. The original service is great (kudos), but the monthly fee may be a bit high for small open source projects.
 
 # Geocode Earth Core JS
 
